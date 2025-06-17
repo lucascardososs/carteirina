@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Carteirinha Impacta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .card {
+      width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+
+    .front, .back {
+      background: linear-gradient(135deg, #1f5ca8 50%, #3c78c5 50%);
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    .header {
+      background: #111;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      padding: 8px 0;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left-info {
+      max-width: 60%;
+    }
+
+    .left-info h3 {
+      margin: 0;
+    }
+
+    .left-info p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .right-info {
+      background: white;
+      color: black;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .back .info-box {
+      background: #003366;
+      padding: 10px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .warning {
+      font-size: 14px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .barcode {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .barcode img {
+      max-height: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Frente da carteirinha -->
+  <div class="card">
+    <div class="front">
+      <div class="header">IMPACTA</div>
+      <div class="content">
+        <div class="left-info">
+          <h3>LUCAS<br>CARDOSO DE LARA</h3>
+          <p>Curso Superior de Tecnologia em<br>Análise e Desenvolvimento de Sistemas</p>
+        </div>
+        <div class="right-info">
+          <p><strong>RA:</strong> 2100248</p>
+          <p><strong>CPF:</strong> 489.826.198-10</p>
+          <p><strong>Validade Semestral:</strong><br>06/2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Verso da carteirinha -->
+  <div class="card">
+    <div class="back">
+      <div class="header">IMPACTA</div>
+      <div class="info-box">
+        Faculdade Impacta Tecnologia | Av. Rudge, 315. São Paulo - SP | CEP: 01133-000 | Tel: 3254-8300<br>
+        <a style="color: white; text-decoration: underline;" href="https://www.impacta.edu.br">www.impacta.edu.br</a>
+      </div>
+      <div class="warning">
+        ESSE CARTÃO É DE USO PESSOAL E INTRANSFERÍVEL;<br>
+        EM CASO DE EXTRAVIO, ENTRE EM CONTATO COM A<br>
+        SECRETARIA DA FACULDADE IMPACTA TECNOLOGIA.
+      </div>
+      <div class="barcode">
+        <img src="https://barcode.tec-it.com/barcode.ashx?data=2100248&code=Code128&dpi=96" alt="Código de barras">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
