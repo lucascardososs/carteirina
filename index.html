@@ -19,6 +19,7 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
       overflow: hidden;
+      height: 340px;
     }
 
     .front, .back {
@@ -26,6 +27,10 @@
       color: white;
       padding: 20px;
       position: relative;
+    }
+
+    .front{
+        height: 100%;
     }
 
     .header {
@@ -45,6 +50,7 @@
 
     .left-info {
       max-width: 60%;
+      padding-top: 50px;
     }
 
     .left-info h3 {
@@ -56,14 +62,19 @@
       font-weight: bold;
     }
 
-    .right-info {
-      background: white;
-      color: black;
-      padding: 10px;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-
+  .right-info {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    height: 200px;
+    font-size: 14px;
+    align-items: start;
+    justify-content: center;
+    display: flex
+;
+    flex-direction: column;
+}
     .back .info-box {
       background: #003366;
       padding: 10px;
@@ -92,16 +103,18 @@
   <!-- Frente da carteirinha -->
   <div class="card">
     <div class="front">
-      <div class="header">IMPACTA</div>
+      <div class="header">
+        <img src="./impacta.png" alt="" style="width: 150px;">
+      </div>
       <div class="content">
         <div class="left-info">
-          <h3>LUCAS<br>CARDOSO DE LARA</h3>
-          <p>Curso Superior de Tecnologia em<br>Análise e Desenvolvimento de Sistemas</p>
+          <h3 style="color: #303030;">LUCAS<br>CARDOSO DE LARA</h3>
+          <p>Curso Superior de Tecnologia em<br>Análise e Desenvolvimento de <br> Sistemas</p>
         </div>
         <div class="right-info">
-          <p><strong>RA:</strong> 2100248</p>
-          <p><strong>CPF:</strong> 489.826.198-10</p>
-          <p><strong>Validade Semestral:</strong><br>06/2026</p>
+          <p>RA: 2100248</p>
+          <p>CPF: 489.826.198-10</p>
+          <p>Validade Semestral:<br>06/2026</p>
         </div>
       </div>
     </div>
@@ -110,8 +123,9 @@
   <!-- Verso da carteirinha -->
   <div class="card">
     <div class="back">
-      <div class="header">IMPACTA</div>
-      <div class="info-box">
+      <div class="header">        <img src="./impacta.png" alt="" style="width: 150px;">
+</div>
+      <div class="info-box" style="color: white;">
         Faculdade Impacta Tecnologia | Av. Rudge, 315. São Paulo - SP | CEP: 01133-000 | Tel: 3254-8300<br>
         <a style="color: white; text-decoration: underline;" href="https://www.impacta.edu.br">www.impacta.edu.br</a>
       </div>
